@@ -39,6 +39,12 @@ const Projects = () => {
         "A Power BI dashboard providing insights into financial data and trends.",
       link: "https://app.powerbi.com/groups/me/reports/49c80631-539a-41c0-af82-71f6d2b32931/8cd56c5a209e09629ed2?experience=power-bi",
     },
+    {
+      title: "Predictive Income and Repair Time Analytics and Forecasting System for Multi9 Computer Shop (Our Ongoing 3rd Year Project)",
+      description:
+        "A comprehensive analytics and forecasting system to predict income and repair times for a computer shop.",
+      link: "https://github.com/Chamodi27s/Predictive-Income-and-Repair-Time-Analytics-and-Forecasting-System-for-Multi9-Computer-Systems",
+    },
   ];
 
   return (
