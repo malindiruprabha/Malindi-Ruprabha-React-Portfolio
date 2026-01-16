@@ -104,12 +104,13 @@
   .home-section {
     height: auto;
     padding: 60px 20px;
+    margin-top: 40px;
   }
 
   .profile-img {
     width: 140px;
     height: 140px;
-    margin-top: 100px; /* moves it down if too high */
+    margin-top: 60px; /* moves it down if too high */
   }
 
   .home-section h1 {
