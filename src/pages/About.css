@@ -22,6 +22,9 @@
   color: #ccc;
 }
 @media (max-width: 768px) {
+  .about-section {
+    padding: 100px 3px;
+  }
   .about-section h2 {
     margin-top:  125px;
   }
