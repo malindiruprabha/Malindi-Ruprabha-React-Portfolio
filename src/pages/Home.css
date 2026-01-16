@@ -1,5 +1,6 @@
+/* === Home Section Basics === */
 .home-section {
-  height: 100vh;
+  min-height: 100vh; /* screen එකට වඩා content වැඩි වුණොත් ඉබේම දික් වෙන්න min-height යොදා ඇත */
   background: linear-gradient(135deg, #161b22, #0d1117);
   display: flex;
   flex-direction: column;
@@ -7,7 +8,9 @@
   align-items: center;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 80px 20px; /* ඉහළ සහ පහළ spacing වැඩි කරන ලදි */
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .profile-img {
@@ -28,6 +31,7 @@
 .home-section h1 {
   font-size: 2.2rem;
   line-height: 1.3;
+  margin: 10px 0;
 }
 
 .home-section span {
@@ -38,7 +42,9 @@
   margin-top: 15px;
   font-size: 18px;
   color: #ccc;
+  max-width: 600px; /* Text එක පැතිරීම පාලනයට */
 }
+
 /* === Social Icons Section === */
 .social-icons {
   display: flex;
@@ -56,21 +62,14 @@
   transform: scale(1.2);
 }
 
-/* Specific color hover effects */
 .linkedin:hover {
   color: #0a66c2;
 }
 
 .github:hover {
-  color:#0a66c2;
+  color: #ffffff; /* GitHub එකට සුදු පාට hover එක වඩාත් ගැලපේ */
 }
 
-/* ✅ Responsive icons */
-@media (max-width: 480px) {
-  .icon {
-    font-size: 1.5rem;
-  }
-}
 /* === Download Button === */
 .download-btn {
   margin-top: 30px;
@@ -90,27 +89,17 @@
   box-shadow: 0 0 15px rgba(88, 166, 255, 0.4);
 }
 
-/* ✅ Responsive button */
-@media (max-width: 480px) {
-  .download-btn {
-    padding: 10px 20px;
-    font-size: 14px;
-  }
-}
+/* === Responsive Design (Mobile & Tablet) === */
 
-
-/* ✅ Responsive design for mobile screens */
+/* Tablet view */
 @media (max-width: 768px) {
   .home-section {
-    height: auto;
-    padding: 60px 20px;
-    margin-top: 40px;
+    padding: 100px 20px; /* Sections දෙක ඈත් කිරීමට padding */
   }
 
   .profile-img {
-    width: 140px;
-    height: 140px;
-    margin-top: 60px; /* moves it down if too high */
+    width: 150px;
+    height: 150px;
   }
 
   .home-section h1 {
@@ -122,12 +111,15 @@
   }
 }
 
-
+/* Mobile view */
 @media (max-width: 480px) {
+  .home-section {
+    padding: 120px 20px; /* කුඩා දුරකථන වලදී වැඩිපුර ඉඩ ලබා දෙයි */
+  }
+
   .profile-img {
-    width: 120px;
-    height: 120px;
-    margin-top: 60px; /* further push down on very small screens */
+    width: 130px;
+    height: 130px;
   }
 
   .home-section h1 {
@@ -135,6 +127,15 @@
   }
 
   .home-section p {
+    font-size: 14px;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  .download-btn {
+    padding: 10px 20px;
     font-size: 14px;
   }
 }
