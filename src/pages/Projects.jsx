@@ -31,13 +31,13 @@ const Projects = () => {
       title: "Financial Sales & Executive Performance Dashboard",
       description:
         "An interactive dashboard to monitor financial sales and executive performance metrics.",
-      link: "https://app.powerbi.com/groups/me/reports/cbf7453e-2b2e-485e-9b3a-996e81949c9f/2854ef5128ee2202676b?experience=power-bi",
+      link: "https://github.com/malindiruprabha/Financial-Sales-Executive-Performance-Dashboard",
     },
     {
       title: "Financial Insights Dashboard",
       description:
         "A Power BI dashboard providing insights into financial data and trends.",
-      link: "https://app.powerbi.com/groups/me/reports/49c80631-539a-41c0-af82-71f6d2b32931/8cd56c5a209e09629ed2?experience=power-bi",
+      link: "https://github.com/malindiruprabha/Financial-Insights-Dashboard",
     },
     {
       title: "Predictive Income and Repair Time Analytics and Forecasting System for Multi9 Computer Shop (Our Ongoing 3rd Year Project)",
